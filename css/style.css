@@ -178,4 +178,20 @@ video{
 
 /* #endregion services */
 
+/* #region galery  */
+.carousel{
+    width: 100%;
+    background-color: #11101b;
+}
 
+.carouselInner{
+    width: 100%;
+    background-color: #11101b;
+    margin: 0 auto;
+}
+
+.imgFit{
+    width: 100%;
+    height: 100%;
+}
+/* #endregion galery */
