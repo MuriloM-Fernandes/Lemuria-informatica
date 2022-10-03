@@ -1,5 +1,70 @@
 /* #region globais */
 
+@font-face {
+    font-family: dunkin;
+    src: url(../font/Dunkin.otf);
+}
+
+
+/* button animation */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+span {
+    position: relative;
+    z-index: 3;
+    color: #ffff;
+}
+
+.btn a {
+    text-decoration: none;
+    border: 2px solid rgb(255, 188, 64);
+    padding: 6px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.btn a::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    width: calc(100% + 6px);
+    /*100% plus double the times left values*/
+    height: calc(100% - 10px);
+    background-color: #d49e58;
+    transition: all 0.5s ease-in-out;
+    transform: scaleY(1);
+}
+
+.btn a:hover::before {
+  transform: scaleY(0);
+}
+
+.btn a::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: -5px;
+    width: calc(100% - 10px);
+    /*100% plus double the times left values*/
+    height: calc(100% + 10px);
+    background-color: #d49e58;
+    transition: all 0.5s ease-in-out;
+    transform: scaleX(1);
+}
+
+.btn a:hover::after {
+    transform: scaleX(0);
+}
+
 /* rem */
 html{
     font-size: 28px;
@@ -7,8 +72,11 @@ html{
 }
 
 /* em */
+
 body,textarea{
     font-size: 14px;
+    font-family: dunkin;
+    font-weight: 100;
 }
 
 h1{
@@ -61,7 +129,7 @@ a{
 }
 
 .logo{
-    width:auto;
+    width: auto;
     height: 50%;
     line-height: 50%;
     color: black;
@@ -79,7 +147,6 @@ a{
 .logo span{
     font-size: 1em;
     font-weight: 800;
-    
 }
 
 /* navbar1 */
@@ -103,6 +170,10 @@ a{
     transition: .3s;
 }
 
+.navbar1 li a:hover{
+    color: rgb(53, 53, 53);
+}
+
 ul.sub{
     position: absolute;
     display: none;
@@ -119,7 +190,7 @@ ul.sub li{
 }
 
 ul.sub li:hover{
-    background-color: rgba(237, 189, 139, .7);
+    background-color: rgba(237, 189, 139, 0.868);
 }
 
 /* navbar2 */
@@ -132,9 +203,14 @@ ul.sub li:hover{
     align-items: center;
 }
 
+.navbar2 li a:hover {
+    color: rgb(53, 53, 53);
+}
+
 .navbar2 li{
     padding: 0 20px;
 }
+
 /* #endregion header */
 
 /* #region home */
@@ -154,30 +230,49 @@ video{
     position: absolute;
     background-color: rgba(0, 0, 0, .4);
     display: flex;
+    padding-left: 20px;
+    padding-bottom: 20px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
+    align-items: flex-start;
     top: 0;
     width: 100%;
     height: 100%;
-    text-align: center;
     z-index: 99;
 }
 
 .homeI h1{
-    font-size: 6em;
+    font-size: 2em;
     color: white;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 170px;
+    border-bottom: 2px solid #ffff;
 }
 
 .homeI h2{
-    font-size: 4em;
+    font-size: 1.5em;
     color: white;
 }
 /* #endregion home */
 
 /* #region services */
+#services {
+    background-color: #9d6d2e;
+}
 
+.serviceC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+}
 /* #endregion services */
 
+<<<<<<< HEAD
 /* #region galery  */
 .carousel{
     width: 100%;
@@ -195,3 +290,5 @@ video{
     height: 100%;
 }
 /* #endregion galery */
+=======
+>>>>>>> 38983e60a74a137cef92310794273f83f92fe9f2
