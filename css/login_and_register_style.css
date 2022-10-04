@@ -75,7 +75,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 10%;
+    padding: 15% 0 10%;
 }
 
 h2 {
@@ -92,6 +92,7 @@ h2 {
     border-radius: 10px;
     display: grid;
     justify-content: center;
+    border-bottom: 3em;
 }
 
 /* logar */
