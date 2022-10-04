@@ -78,3 +78,13 @@ if ($(window).width() < 769) {
     });
 
 }
+
+//about
+//reload
+window.addEventListener('resize', function (event) {
+    recarrega();
+});
+
+function recarrega() {
+    document.location.reload();
+};
