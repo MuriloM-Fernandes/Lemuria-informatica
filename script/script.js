@@ -20,6 +20,16 @@ window.addEventListener("load",function(){
     video.loop = true;
 });
 
+//about
+//reload
+window.addEventListener('resize', function (event) {
+    recarrega();
+});
+
+function recarrega() {
+    document.location.reload();
+};
+
 //carousel swiper
 var swiper = new Swiper(".carouselSwiper", {
     spaceBetween: 30,
@@ -78,13 +88,3 @@ if ($(window).width() < 769) {
     });
 
 }
-
-//about
-//reload
-window.addEventListener('resize', function (event) {
-    recarrega();
-});
-
-function recarrega() {
-    document.location.reload();
-};
