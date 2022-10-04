@@ -301,6 +301,11 @@ video{
     margin-bottom: 15px;
 }
 
+.cardServ:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
 /* #endregion services */
 
 /* #region galery  */
@@ -415,8 +420,13 @@ video{
     border-radius: 20px;
 }
 
+<<<<<<< HEAD
 .contactC form {
     background-color: rgba(4, 52, 60, 0.65);;
+=======
+.contact form {
+    background-color: rgba(4, 52, 60, 0.65);
+>>>>>>> 6e4a29652e0d2cd208310a9e94d32646d399c542
     padding: 30px 40px;
     width: 25%;
     margin-bottom: 30px;
@@ -442,9 +452,13 @@ video{
 
 /* #region footer */
 footer {
-    display: flex;
     background-color: rgb(69, 69, 69);
     padding: 20px 40px;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
 }
 
 footer h3 {
