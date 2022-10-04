@@ -321,15 +321,89 @@ video{
 }
 /* #endregion galery */
 
+/* #region products */
+#products{
+    background-image: url('../img/productsBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 8.5em 0;
+    text-align: center;
+    color: white;
+}
+#products h4{
+    margin-bottom: 70px;
+    font-size: 2em;
+    align-items: center;
+}
+
+.productsC{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cardProd{
+    width: 35%;
+    text-align: center;
+    color: white;
+    margin: 2em 1.5em;
+}
+
+.cardProd img{
+    color: white;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 10px 10px 0 0;
+}
+
+.cardProd div.title{
+    background-color: rgba(237, 189, 139, .7);
+    color: white;
+    font-size: 2em;
+    text-transform: capitalize;
+    padding: .8em;
+}
+
+.cardProd li{
+    height: 39px;
+    line-height: 39px;
+    background-color: white;
+    color: black;
+}
+
+.cardProd li:last-child{
+    height: 20px;
+    line-height: 20px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.recomended li:not(:first-child){
+    color: white;
+    background-color: black !important;
+
+}
+/* #endregion products */
+
 /* #region contact */
-.contact {
+#contact {
+    background-image: url('../img/contactBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contactC{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../img/contactBackground.jpg);
 }
 
-.contact h2 {
+.contactC h2 {
     width: 500px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -341,7 +415,7 @@ video{
     border-radius: 20px;
 }
 
-.contact form {
+.contactC form {
     background-color: rgba(4, 52, 60, 0.65);;
     padding: 30px 40px;
     width: 25%;
@@ -352,7 +426,7 @@ video{
     justify-content: center;
 }
 
-.contact input {
+.contactC input {
     width: 300px;
     height: 40px;
     border: none;
@@ -361,7 +435,7 @@ video{
     padding-left: 10px;
 }
 
-.contact textarea {
+.contactC textarea {
     padding-left: 10px;
 }
 /* #endregion contact */
