@@ -369,7 +369,7 @@ video{
 }
 
 .cardProd div.title{
-    background-color: rgba(237, 189, 139, .7);
+    background-color: rgb(237, 189, 139);
     color: white;
     border-top: 20px;
     padding: 10px;
@@ -387,6 +387,11 @@ video{
 .cardProd div.info h5 {
     padding-top: 2px;
     margin-bottom: 20px;
+}
+
+.cardProd div.btn a span:hover {
+    color: black;
+    transition: 0.5s;
 }
 
 /* #endregion products */
